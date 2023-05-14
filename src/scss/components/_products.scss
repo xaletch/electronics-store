@@ -1,0 +1,82 @@
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    .content__items {
+        .content__title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #838383;
+        }
+        .content__product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            .card__block--wrapper {
+                width: 312px;
+                height: 359px;
+                padding: 15px 20px 26px 18px;
+                background: #fff;
+                border-radius: 30px;
+                .card__block--inner {
+                    .card__image {
+                        display: flex;
+                        justify-content: center;
+                        .earPodsBox {
+                            margin-top: 60px;
+                        }
+                    }
+                    .card__product--description {
+                        margin-top: 50px;
+                        .card__block {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 15px;
+                        }
+                        .electronic__title {
+                            margin: 0;
+                            font-size: 17px;
+                            font-weight: 600;
+                            color: #1C1C27;
+                        }
+                        .card__price {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            .electronic__price {
+                                font-size: 17px;
+                                font-weight: 600;
+                                color: #FFA542;
+                            }
+                            .price__discount {
+                                text-decoration: line-through;
+                                font-size: 13px;
+                                font-weight: 600;
+                                color: #FFCE7F;
+                            }
+                        }
+                        .card__content--end {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .button__rating {
+                                display: flex;
+                                align-self: center;
+                                .electronic__rating {
+                                    font-size: 17px;
+                                    font-weight: 600;
+                                    color: #838383;
+                                    margin-left: 10px;
+                                }
+                            }
+                            .button__by {
+                                font-size: 17px;
+                                font-weight: 600;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

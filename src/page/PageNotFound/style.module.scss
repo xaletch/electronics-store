@@ -1,0 +1,10 @@
+.container {
+    padding: 100px 80px;
+    text-align: center;
+    .home a{
+        color: #615b5b;
+        &:hover {
+            color: #000;
+        }
+    }
+}

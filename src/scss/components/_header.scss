@@ -1,0 +1,44 @@
+.header {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__logo .logo {
+            font-size: 25px;
+            font-weight: 700px;
+            color: #101010;
+            margin: 0;
+        }
+        .header__card {
+            display: flex;
+            align-items: center;
+            .icon {
+                width: 62px;
+                height: 60px;
+                background: none;
+                border: none;
+                position: relative;
+            }
+            .quantity {
+                padding: 2px;
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                font-weight: 500;
+                font-size: 15px;
+                color: #fff;
+                background: #FFA542;
+                border-radius: 30px;
+                top: 10px;
+                left: 32px;
+                cursor: pointer;
+            }
+            svg {
+                cursor: pointer;
+            }
+        }
+    }
+}

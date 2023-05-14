@@ -1,0 +1,32 @@
+@import './components//all';
+
+body {
+  display: block;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #EAEAEA;
+  padding: 0 50px;
+}
+
+// colors:
+// logo #101010
+// title #1C1C27
+// price, active #FFA542
+// rating #838383
+// cart product plus and minus #FFCE7F
+// cart product price #AAAAAA
+// cart total price and title #1C1C27
+// cart button #101010
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1C1C27;
+}
+
+.app {
+  height: 100vh;
+}
