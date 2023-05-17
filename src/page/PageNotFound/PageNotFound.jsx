@@ -2,7 +2,7 @@ import React from 'react'
 import style from './style.module.scss'
 import { Link } from 'react-router-dom'
 
-export const PageNotFound = () => {
+const PageNotFound = () => {
   return (
     <div className={style.container}>
       <h1 className={style.h1}>Данная страница не найдена</h1>
@@ -10,3 +10,5 @@ export const PageNotFound = () => {
     </div>
   )
 }
+
+export default PageNotFound;

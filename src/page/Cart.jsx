@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react'
 import { CartItem } from '../components/CartItem'
 import { useSelector } from 'react-redux'
-import { Footer } from '../components';
+import { Footer } from '../components/index';
 import { CartEmpty } from './PageNotFound/CartEmpty/CartEmpty';
 
-export const Cart = () => {
+const Cart = () => {
   const products = useSelector((state) => state.cart.items); 
-  const { totalPrice } = useSelector((state) => state.cart)
+  const { items, totalPrice } = useSelector((state) => state.cart);
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, []);
 
-  if(totalPrice === 0) {
+  if(items.length === 0) {
     return <CartEmpty />
   }
 
@@ -43,3 +43,5 @@ export const Cart = () => {
     </div>
   )
 }
+
+export default Cart;

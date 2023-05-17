@@ -18,6 +18,11 @@
                 background: #fff;
                 border-radius: 30px;
                 .card__block--inner {
+                    position: relative;
+                    .button__favorites {
+                        position: absolute;
+                        right: 0;
+                    }
                     .card__image {
                         display: flex;
                         justify-content: center;

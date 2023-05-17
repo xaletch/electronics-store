@@ -14,10 +14,7 @@ export const cartSlice = createSlice({
             if (addItem) {
                 addItem.count++
             } else {
-                state.items.push({
-                    ...action.payload,
-                    count: 1,
-                });
+                state.items.push( { ...action.payload, count: 1 } );
                 state.totalPrice = state.items.reduce((sum, item) => item.price + sum, 0);
             }
         },

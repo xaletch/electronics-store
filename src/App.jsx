@@ -1,7 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { Cart, Favorites, Header, Home, PageNotFound } from './components/index'
+import { Header } from './components/index';
+
+import Home from "./page/Home";
+import Cart from "./page/Cart";
+import Favorites from "./page/Favorites";
+import PageNotFound from "./page/PageNotFound/PageNotFound";
 
 function App() {
   return (
