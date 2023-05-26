@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export const Footer = () => {
+import { useTranslation } from 'react-i18next';
 
+import '../18n'
+
+export const Footer = () => {
+  const [onLanguages, setOnLanguages] = useState(0);
+
+  const lang = [{lang: 'Рус', active: 'ru'}, {lang: 'Eng', active: 'en'}];
+
+  const { t, i18n } = useTranslation();
+  
+  const tests = (i) => {
+    setOnLanguages(i);
+    i18n.changeLanguage(onLanguages === 1 ? 'ru' : 'en');
+  };
+  
   return (
     <div className='footer'>
       <div className='footer__content container'>
@@ -12,12 +26,12 @@ export const Footer = () => {
           </Link>
           <div className='footer__menu'>
             <ul className='footer__menu--items'>
-              <li className='menu__item footer__text'><Link to='favorites'>Избранное</Link></li>
-              <li className='menu__item footer__text'><Link to='cart'>Корзина</Link></li>
-              <li className='menu__item footer__text'><Link to='*'>Контакты</Link></li>
+              <li className='menu__item footer__text'><Link to='/favorites'>{t("Избранное")}</Link></li>
+              <li className='menu__item footer__text'><Link to='/cart'>{t('Корзина')}</Link></li>
+              <li className='menu__item footer__text'><Link to='*'>{t('Контакты')}</Link></li>
             </ul>
             <div className='footer__inner--block'>
-            <span className='conditions footer__text'><Link to='*'>Условия сервиса</Link></span>
+            <span className='conditions footer__text'><Link to='*'>{t('Условия сервиса')}</Link></span>
               <div className='language__content'>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_2_187)">
@@ -33,8 +47,9 @@ export const Footer = () => {
                   </clipPath>
                 </defs>
               </svg>
-              <b className='language active'>Рус</b>
-              <b className='language'>Eng</b>
+              {lang.map((obj, i) => <b onClick={() => tests(i)} className={onLanguages === i ? 'active language' : 'language'}>{obj.lang}</b>)}
+              {/* <b onClick={() => tests("ru")} className='language active'>Рус</b>
+              <b onClick={() => tests("en")} className='language'>Eng</b> */}
               </div>
             </div>
           </div>

@@ -3,9 +3,13 @@ import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { addProductCart } from '../../redux/slices/cartSlice'
 import { addFavorites } from '../../redux/slices/favoritesSlice'
+import { useTranslation } from 'react-i18next';
+
 
 export const ProductBlock = ({ id, img, title, rate, price, discount, clName }) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+
+  const { t } = useTranslation();
   
   const onClickAddCart = () => {
     const item = {
@@ -57,7 +61,7 @@ export const ProductBlock = ({ id, img, title, rate, price, discount, clName }) 
                 <span className='electronic__rating'>{rate}</span>
               </div>
               <Link className='button__by' to='cart'>
-                <span onClick={onClickAddCart}>Купить</span>
+                <span onClick={onClickAddCart}>{t("Купить")}</span>
               </Link>
             </div>
           </div>
