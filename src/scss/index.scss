@@ -6,6 +6,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #EAEAEA;
   padding: 0 50px;
+
+  @media (max-width: 710px) {
+    padding: 0 15px;
+  }
 }
 
 // colors:

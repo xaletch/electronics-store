@@ -1,6 +1,6 @@
 // favorites__container {}
 .favorites__item {
-    width: 500px;
+    max-width: 500px;
     // height: 190px;
     padding: 18px 31px 26px 18px;
     display: grid;
@@ -9,6 +9,16 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     margin-bottom: 30px;
+
+    @media (max-width: 710px) {
+        max-width: 418px;
+        grid-template-columns: 150px 150px 115px;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+    }
+
     .favorites__item--img {
         .product_img {
             width: 146px;

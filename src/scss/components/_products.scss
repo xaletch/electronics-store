@@ -11,12 +11,31 @@
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
+
+            @media (max-width: 1200px) {
+                justify-content: center;
+            }
+
             .card__block--wrapper {
                 width: 312px;
                 height: 359px;
                 padding: 15px 20px 26px 18px;
                 background: #fff;
                 border-radius: 30px;
+
+                @media (max-width: 850px) {
+                    width: 250px;
+                }
+
+                @media (max-width: 710px) {
+                    width: 170px;
+                    height: auto;
+                }
+
+                @media (max-width: 480px) {
+                    width: 120px;
+                }
+
                 .card__block--inner {
                     position: relative;
                     .button__favorites {
@@ -29,6 +48,12 @@
                         .earPodsBox {
                             margin-top: 60px;
                         }
+
+                        img {
+                            @media (max-width: 710px) {
+                                width: 100%;
+                            }
+                        }
                     }
                     .card__product--description {
                         margin-top: 50px;
@@ -36,21 +61,35 @@
                             display: flex;
                             justify-content: space-between;
                             margin-bottom: 15px;
+
+                            @media (max-width: 480px) {
+                                flex-direction: column;
+                                align-items: end;
+                            }
                         }
                         .electronic__title {
                             margin: 0;
                             font-size: 17px;
                             font-weight: 600;
                             color: #1C1C27;
+
+                            @media (max-width: 710px) {
+                                font-size: 14px;
+                            }
                         }
                         .card__price {
                             display: flex;
                             align-items: center;
                             flex-direction: column;
+
                             .electronic__price {
                                 font-size: 17px;
                                 font-weight: 600;
                                 color: #FFA542;
+
+                                @media (max-width: 710px) {
+                                    font-size: 12px;
+                                }
                             }
                             .price__discount {
                                 text-decoration: line-through;
@@ -63,6 +102,12 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
+
+                            @media (max-width: 480px) {
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                            }
+
                             .button__rating {
                                 display: flex;
                                 align-self: center;
@@ -77,6 +122,11 @@
                                 font-size: 17px;
                                 font-weight: 600;
                                 color: #000;
+
+                                @media (max-width: 480px) {
+                                    width: 100%;
+                                    text-align: end;
+                                }
                             }
                         }
                     }
