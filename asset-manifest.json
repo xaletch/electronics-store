@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/electronics-store/static/css/main.9fdbb91b.css",
+    "main.js": "/electronics-store/static/js/main.c20afcb1.js",
+    "static/js/787.82f5e3d3.chunk.js": "/electronics-store/static/js/787.82f5e3d3.chunk.js",
+    "static/media/Image (2).png": "/electronics-store/static/media/Image (2).550f390560a3d8cbd0ac.png",
+    "static/media/Image (5).png": "/electronics-store/static/media/Image (5).ab08cc2d6de451e264b5.png",
+    "static/media/Image (4).png": "/electronics-store/static/media/Image (4).746766f4e264e6d731c5.png",
+    "static/media/Image.png": "/electronics-store/static/media/Image.de6100077f82bfc39145.png",
+    "static/media/Image (3).png": "/electronics-store/static/media/Image (3).f73b2c97425ad92df816.png",
+    "static/media/Image (1).png": "/electronics-store/static/media/Image (1).334ec56e2b4984f9aa49.png",
+    "index.html": "/electronics-store/index.html",
+    "static/media/getFetch.cjs": "/electronics-store/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.9fdbb91b.css.map": "/electronics-store/static/css/main.9fdbb91b.css.map",
+    "main.c20afcb1.js.map": "/electronics-store/static/js/main.c20afcb1.js.map",
+    "787.82f5e3d3.chunk.js.map": "/electronics-store/static/js/787.82f5e3d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fdbb91b.css",
+    "static/js/main.c20afcb1.js"
+  ]
+}
